@@ -23,7 +23,7 @@ use {Multiaddr, PeerId};
 
 /// Storage for the network topology.
 pub trait Topology {
-    /// Returns the addresses to try use to reach the given peer.
+    /// Returns the addresses to use to try to reach the given peer.
     fn addresses_of_peer(&mut self, peer: &PeerId) -> Vec<Multiaddr>;
 }
 
