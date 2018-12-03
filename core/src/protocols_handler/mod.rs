@@ -101,7 +101,7 @@ pub trait ProtocolsHandler {
     /// Produces a `ConnectionUpgrade` for the protocol or protocols to accept when listening.
     ///
     /// > **Note**: You should always accept all the protocols you support, even if in a specific
-    /// >           context you wouldn't accept one in particular (eg. only allow one substream at
+    /// >           context you wouldn't accept one in particular (e.g. only allow one substream at
     /// >           a time for a given protocol). The reason is that remotes are allowed to put the
     /// >           list of supported protocols in a cache in order to avoid spurious queries.
     fn listen_protocol(&self) -> Self::InboundProtocol;
